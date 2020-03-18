@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 require('./routes/userRoutes')(app);
+require('./routes/uploadRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
@@ -18,5 +19,5 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`app running on port ${PORT}`)
+  console.log(`app running on port ${PORT}`);
 });
