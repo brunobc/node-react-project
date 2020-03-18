@@ -7,7 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mt15 {
+  margin-top: 15px;
+}
+
+.scroll-table {
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
 }
